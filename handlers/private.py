@@ -28,7 +28,7 @@ async def start_(client: Client, message: Message):
                         "💬 Sohbet", url="https://t.me/Sohbetskyfall"
                     ),
                     InlineKeyboardButton(
-                        "🙎‍♂️ Geliştirici", url="https://t.me/Mahoaga" 
+                        "🙎‍♂️ Geliştirici", url="https://t.me/Mahoaga") 
                 ],
                 [
                     InlineKeyboardButton(
