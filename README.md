@@ -13,6 +13,7 @@
 - Youtube, Yerel oynatma desteği
 - Youtube youtube arama komutu eklendi (/dinle) 
 - Sınırsız müzik keyfi 🥳
+- Heroku için Restart atma özelliği eklendi
 ----------------------------------
 ### Komutlar genel 👨‍🦱
 
