@@ -28,11 +28,11 @@ async def start_(client: Client, message: Message):
                         "💬 Sohbet", url="https://t.me/Sohbetskyfall"
                     ),
                     InlineKeyboardButton(
-                        "🙎‍♂️ Geliştirici", url="https://t.me/Mahoaga" )
+                        "🙎‍♂️ Geliştirici", url="https://t.me/Mahoaga" 
                 ],
                 [
                     InlineKeyboardButton(
-                        "📣 Destek Grubu", url="https://t.me/Sohbetdestek"
+                        "🧩 Kaynak Kodu", url="https://github.com/Mehmetbaba55/Efsane-Voice2021"
                     )
                 ]
             ]
