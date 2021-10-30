@@ -1,5 +1,5 @@
 {
-  "name": "MusicBot",
+  "name": "Efsane-Voice",
   "description": "Telegram'ınızın Grup Sesli Sohbeti'nde şarkı çalmak için Açık Kaynaklı bot. PyTgCalls tarafından desteklenmektedir.",
   "keywords": ["music", "voicechat", "telegram"],
   "repository": "https://github.com/Mehmetbaba55/Efsane-Voice2021",
@@ -24,20 +24,20 @@
       "value": ""
     },
     "HEROKU_API_KEY": {
-      "description": "your heroku api key get it from https://dashboard.heroku.com/account",
+      "description": "Heroku api anahtarınız (Ayarlar veya çark simgesine basarak alın) https://dashboard.heroku.com/account",
       "required": true
     },
     "HEROKU_APP_NAME": {
-      "description": "Your heroku appname",
+      "description": "Heroku uygulama adınız",
       "required": true
 
     },
     "API_ID": {
-      "description": "App id my.telegram.org/apps",
+      "description": "Uygulama id my.telegram.org/apps",
       "required": true
     },
     "API_HASH": {
-      "description": "App hash my.telegram.org/apps",
+      "description": "Uygulama api hash my.telegram.org/apps",
       "required": true
     
     },
