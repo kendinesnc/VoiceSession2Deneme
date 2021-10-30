@@ -94,7 +94,7 @@ async def help(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "👨‍💻 Düzenleyen", url="https://t.me/nailcanatg" 
+                        "👨‍💻 Düzenleyen", url="https://t.me/Sohbetdestek" 
                     )
                 ]
             ]
