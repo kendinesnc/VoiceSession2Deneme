@@ -22,6 +22,14 @@
       "description": "Müzik botunun kullanıcı adını yazın.@ olmadan",
       "required": true,
       "value": ""
+    },
+    "HEROKU_API_KEY": {
+      "description": "your heroku api key get it from https://dashboard.heroku.com/account",
+      "required": true
+    },
+    "HEROKU_APP_NAME": {
+      "description": "Your heroku appname",
+      "required": true
 
     },
     "API_ID": {
