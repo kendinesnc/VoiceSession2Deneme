@@ -8,6 +8,9 @@ SESSION_NAME = getenv("SESSION_NAME", "session")
 BOT_TOKEN = getenv("BOT_TOKEN")
 BOT_NAME = getenv("BOT_NAME")
 BOT_USERNAME = getenv("BOT_USERNAME")
+HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+
 PMPERMIT = getenv("PMPERMIT", None)
 
 API_ID = int(getenv("API_ID"))
