@@ -36,7 +36,7 @@ Ana Grup = [Sohbet Destek](https://t.me/jackmedyaa)
 
 <h3 align="centre"> Heroku </h4>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Alfa00006/Alfa-Vc_bot)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Mehmetbaba55/Efsane-Voice2021)
 
 STRING_NAME i buradan alın ;
 
