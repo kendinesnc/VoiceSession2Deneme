@@ -14,6 +14,7 @@
 - Youtube youtube arama komutu eklendi (/dinle) 
 - Sınırsız müzik keyfi 🥳
 - Heroku için Restart atma özelliği eklendi
+- Türkçe ve İngilizce komutlar 🤫
 ----------------------------------
 ### Komutlar genel 👨‍🦱
 
