@@ -19,4 +19,3 @@ ffmpeg-python
 heroku3
 motor
 dnspython
-
