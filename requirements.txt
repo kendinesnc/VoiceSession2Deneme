@@ -15,4 +15,4 @@ ffmpeg
 Pillow
 ujson
 yt_dlp
-tgcalls
+heroku3
