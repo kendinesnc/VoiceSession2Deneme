@@ -12,7 +12,7 @@ from helpers.filters import command, other_filters
 from helpers.decorators import errors, authorized_users_only
 
 
-@Client.on_message(command("durdur") & other_filters)
+@Client.on_message(command(["durdur", "pause"]) & other_filters)
 @errors
 @authorized_users_only
 async def durdur(_, message: Message):
@@ -27,7 +27,7 @@ async def durdur(_, message: Message):
         await message.reply_text(f"**{BN} :-** 🤐 ᴅᴜʀᴅᴜʀᴜʟᴅᴜ!")
 
 
-@Client.on_message(command("devam") & other_filters)
+@Client.on_message(command(["devam", "resume"]) & other_filters)
 @errors
 @authorized_users_only
 async def devam(_, message: Message):
@@ -42,7 +42,7 @@ async def devam(_, message: Message):
         await message.reply_text(f"**{BN} :-** 🥳 ᴅᴇᴠᴀᴍ ᴇᴅɪʏᴏʀ!")
 
 
-@Client.on_message(command("son") & other_filters)
+@Client.on_message(command(["son", "end"]) & other_filters)
 @errors
 @authorized_users_only
 async def bitir(_, message: Message):
@@ -59,7 +59,7 @@ async def bitir(_, message: Message):
 
 
 
-@Client.on_message(command("atla") & other_filters)
+@Client.on_message(command(["atla", "skip"]) & other_filters)
 @errors
 @authorized_users_only
 async def atla(_, message: Message):
