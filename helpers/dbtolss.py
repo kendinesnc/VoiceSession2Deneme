@@ -8,8 +8,8 @@ import asyncio
 import traceback
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
 
-from DeCodeMusic.helpers.database import db, Database, dcmdb
-from DeCodeMusic.config import LOG_CHANNEL, BROADCAST_AS_COPY, GROUP_SUPPORT
+from helpers.database import db, Database, dcmdb
+from config import LOG_CHANNEL, BROADCAST_AS_COPY, GROUP_SUPPORT
 
 async def handle_user_status(bot, cmd):
     chat_id = cmd.chat.id
@@ -17,7 +17,7 @@ async def handle_user_status(bot, cmd):
         await db.add_user(chat_id)
         await bot.send_message(
             LOG_CHANNEL,
-            f"**📣 Notification** \n\n#NEW_USER **start use your bot!** \n\nFirst name: `{cmd.from_user.first_name}` \nUser id: `{cmd.from_user.id}` \nProfile link: [{cmd.from_user.first_name}](tg://user?id={cmd.from_user.id})"
+            f"**📣 Bildirim** \n\n#NEW_USER **botunuzu kullanmaya başlayın!** \n\nFirst name: `{cmd.from_user.first_name}` \nUser id: `{cmd.from_user.id}` \nProfile link: [{cmd.from_user.first_name}](tg://user?id={cmd.from_user.id})"
         )
 
     ban_status = await db.get_ban_status(chat_id)
@@ -33,7 +33,7 @@ async def handle_user_status(bot, cmd):
     
     
     
-# Broadcast Tools
+# Yayın Araçları
 
 broadcast_ids = {}
 
@@ -66,7 +66,7 @@ async def main_broadcast_handler(m, db):
         if not broadcast_ids.get(broadcast_id):
             break
     out = await m.reply_text(
-        text=f"**💡 broadcast started...**\n\n**when it's done, you'll be notified**"
+        text=f"**💡 yayın başlatıldı...**\n\n**bittiğinde, size bildirilir**"
     )
     start_time = time.time()
     total_users = await db.total_users_count()
@@ -124,7 +124,7 @@ async def main_broadcast_handler(m, db):
 
 
 
-# Anti Command Feature
+# Komut Önleme Özelliği
 
 delcmdmdb = dcmdb.admins
 
