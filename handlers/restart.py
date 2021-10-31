@@ -6,7 +6,7 @@ from helpers.decorators import sudo_users_only
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton, Chat, CallbackQuery
 
 
-@Client.on_message(command(["restart", "reboot"]) & ~filters.edited)
+@Client.on_message(command(["restart"]) & ~filters.edited)
 @sudo_users_only
 @check_heroku
 async def gib_restart(client, message, hap):
