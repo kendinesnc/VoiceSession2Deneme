@@ -10,7 +10,7 @@ import callsmusic
 from config import BOT_NAME as BN
 from helpers.filters import command, other_filters
 from helpers.decorators import errors, authorized_users_only
-from helpers.dbtools import handle_user_status, delcmd_is_on, delcmd_on, delcmd_off
+
 
 @Client.on_message(command(["durdur", "pause"]) & other_filters)
 @errors
