@@ -10,7 +10,7 @@ import callsmusic
 from config import BOT_NAME as BN
 from helpers.filters import command, other_filters
 from helpers.decorators import errors, authorized_users_only
-
+from helpers.dbtools import handle_user_status, delcmd_is_on, delcmd_on, delcmd_off
 
 @Client.on_message(command(["durdur", "pause"]) & other_filters)
 @errors
@@ -132,3 +132,32 @@ async def change_volume(client, message):
 )
 async def helper(client , message:Message):
      await message.reply_text("Komutlar ve kullanım burada açıklanmıştır.: \n 🎵 `/dinle` Youtube'da şarkıyı dinlemek için \n ▶️ `/oynat` Bir bağlantıya veya oynatılacak herhangi bir telgraf ses dosyasına yanıt olarak bunu yanıtlayın veya bul komutu ile kullanılabilir. \n ⏭️ `/atla` geçerli şarkıyı atlamak için \n ❌ `/son` şarkı akışını durdurmak için \n ⏸️ `/durdur` akışı duraklatmak için \n ⏩ `/devam` kayıttan yürütmeyi sürdürmek için. \n Satır içi arama da desteklenir.")
+
+
+
+# Bu bir cmd önleme özelliğidir. 
+@Client.on_message(command(["delcmd", "sil"]) & ~filters.private)
+@authorized_users_only
+async def delcmdc(_, message: Message):
+    if len(message.command) != 2:
+        await message.reply_text("Silme işlemine yarayan  özelliğim var")
+        return
+    status = message.text.split(None, 1)[1].strip()
+    status = status.lower()
+    chat_id = message.chat.id
+    if status == "on":
+        if await delcmd_is_on(message.chat.id):
+            await message.reply_text("✅ Zaten Aktif")
+            return
+        else:
+            await delcmd_on(chat_id)
+            await message.reply_text(
+                "🟢 Aktif Destekçi Sohbetdestek"
+            )
+    elif status == "off":
+        await delcmd_off(chat_id)
+        await message.reply_text("🔴 Başarıyla devre dışı bırakıldı.")
+    else:
+        await message.reply_text(
+            "Silme işlemine yarayan özelliğim var"
+        )
