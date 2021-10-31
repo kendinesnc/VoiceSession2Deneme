@@ -1,3 +1,4 @@
+# handerles init dosyasından çalışmakta... (@SohbetDestek) 
 from handlers import check_heroku
 from helpers.filters import command
 from pyrogram import Client, filters
