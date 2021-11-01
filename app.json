@@ -24,7 +24,7 @@
       "value": ""
     },
     "HEROKU_API_KEY": {
-      "description": "Heroku api anahtarınız (Herokunuzun ayarları menüsüne basarak alın) https://dashboard.heroku.com/account",
+      "description": "Heroku api anahtarınız (Herokunun ayarlar menüsüne basarak alın) https://dashboard.heroku.com/account",
       "required": false
     },
     "HEROKU_APP_NAME": {
