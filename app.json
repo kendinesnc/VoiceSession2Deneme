@@ -28,7 +28,7 @@
       "required": false
     },
     "HEROKU_APP_NAME": {
-      "description": "Heroku uygulama adınız",
+      "description": "Heroku uygulama ADINIZ. (Deploy etmeniz için vermiş olduğunuz name)",
       "required": false
 
     },
