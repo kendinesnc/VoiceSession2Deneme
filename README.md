@@ -1,5 +1,7 @@
 <h1 align="centre">Müzik Oynatıcı Bot 🎵</h1>
 
+## Güncel çalışmaktadır... 
+
 ### Zorunlu Gerekenler. 
 ----------------------------------
    - `API_ID` :  Fake hesabınızın Api ID sini giriniz. 
