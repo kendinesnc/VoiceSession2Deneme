@@ -1,4 +1,4 @@
-<h1 align="centre">Müzik Oynatıcı Bot 🎵</h1>
+<h1 align="centre">Çift session 🎵</h1>
 
 
 Ana Grup = [Sohbet Destek](https://t.me/jackmedyaa)
